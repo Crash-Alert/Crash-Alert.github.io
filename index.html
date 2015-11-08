@@ -3,9 +3,11 @@
   <head>
     <title>Crash Alert - Revolutionize plane rescues</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"/>
     <!-- Compiled and minified JavaScript -->
     <script src="js/download.js"></script>
+    <script src="js/jquery-1.11.3.js"</script>
+    <script src="js/main.js"</script>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/crashBeacon.css"/>
     <link rel="shortcut icon" href="assets/faviacon.ico"/>
@@ -22,8 +24,7 @@
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Crash Alert</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="data.html">Data</a></li>
+          <li><a href="#data">Data</a></li>
         </ul>
       </div>
     </nav>
@@ -39,6 +40,7 @@
       <button onclick="download()" class="waves-effect waves-light btn valign">Download App</button>
     </div>
     <div id="data" class="animated bounceInLeft">
+       <h1>Data</h1>
       <table style="width:100%">
         <tr>
           <td><b>Latitude</b></td>

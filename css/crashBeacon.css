@@ -28,10 +28,14 @@ button{
    position: absolute;
    left: 45%;
    background-color: #B71C1C !important;
-   padding-bottom: 10%
+   padding-bottom: 20%;
 }
 table{
    position: absolute;
-   top: 120%;
    left: 3%;
+}
+#data h1{
+   text-align: center;
+   color: white;
+   padding-top: 5%;
 }
