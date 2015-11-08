@@ -1,6 +1,37 @@
+body{
+  background-color: #000000; !important
+}
 nav{
  background-color: #B71C1C !important
 }
 nav ul li a{
   font-size: 20px; !important
+}
+.examples{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28%;
+}
+#enab, #disab{
+  height: 400px;
+  width: 300px;
+}
+.content h1, .content p{
+  color: white;
+  text-align: center;
+}
+.content p{
+  font-size: 20px;
+}
+button{
+   position: absolute;
+   left: 45%;
+   background-color: #B71C1C !important;
+   padding-bottom: 10%
+}
+table{
+   position: absolute;
+   top: 120%;
+   left: 3%;
 }

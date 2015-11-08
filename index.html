@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Crash Alert - Revolutionize plane rescues</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="css/crashBeacon.css"/>
+    <script src="js/download.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/crashBeacon.css"/>
+    <link rel="shortcut icon" href="assets/faviacon.ico"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+     <script>
+    function download(){
+      downloadFile("crashalert.apk");
+    }
+   </script>
+
   </head>
   <body>
-    <nav>
+    <nav class="animated bounceInLeft">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" class="brand-logo">Crash Alert</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li><a href="data.html">Data</a></li>
         </ul>
       </div>
     </nav>
+    <div class="examples animated bounceInLeft">
+      <img src="assets/enab.png" id="enab"/>
+      <img src="assets/disab.png" id="disab"/>
+    </div>
+    <div class="content animated bounceInLeft">
+      <h1>What is Crash Alert?</h1>
+      <p>Crash Alert is next generation in Plane Crash assists.  Inspired by the recent plane crashes and losses, Crash Alert uses the built in accelerometer of the phone to get the force of the shaking of the phone.  We then used the geolocation api of android to get the latitude longitude and altitude of the phone in the plane.  When the force values exceed a threshhold, we send the data to a syncano server that stores the data for visibility. Rescue workers can then view this data to help find lost planes at the coordinates given.</p>
+    </div>
+    <div class="download animated bounceInLeft">
+      <button onclick="download()" class="waves-effect waves-light btn valign">Download App</button>
+    </div>
+    <div id="data" class="animated bounceInLeft">
+      <table style="width:100%">
+        <tr>
+          <td><b>Latitude</b></td>
+          <td><b>Longitude</b></td>
+          <td><b>Altitude</b></td>
+          <td><b>force_x</b></td>
+          <td><b>force_y</b></td>
+          <td><b>force_z</b></td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>-50</td>
+          <td>-50</td>
+          <td>-50</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>60</td>
+          <td>60</td>
+          <td>-55</td>
+          <td>-55</td>
+          <td>-55</td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>-64</td>
+          <td>20</td>
+          <td>34.56745</td>
+          <td>20.456</td>
+          <td>15.767</td>
+        </tr>
+      </table>
   </body>
           
